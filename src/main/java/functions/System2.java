@@ -14,7 +14,9 @@ public class System2 extends Function {
         double[] F = new double[n];
         F[0] = x[0] * x[0] - 2 * x[1] * x[1] - x[0] * x[1] + 2 * x[0] - x[1] + 1;
         F[1] = 2 * x[0] * x[0] - x[1] * x[1] + x[0] * x[1] + 3 * x[1] - 5;
-        return F;
+//        return F;
+        return new double[]{Math.sin(2 * x[0] - x[1]) - 1.2 * x[0] - 0.4, 0.8 * Math.pow(x[0], 2) + 1.5 * Math.pow(x[1], 2) - 1};
+
     }
 
     public double[][] getJacobian(double[] x) {

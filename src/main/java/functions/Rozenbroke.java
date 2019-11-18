@@ -9,7 +9,7 @@ public class Rozenbroke extends Function {
     }
 
     public double[] getX0() {
-        double[] x0 = new double[n];
+        double[] x0 = new double[10];
         for (int i = 0; i < n; i += 2) {
             x0[i] = -1.2;
             x0[i + 1] = 1;
